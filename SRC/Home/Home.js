@@ -1,4 +1,4 @@
-import {View, ImageBackground, Image, Text} from 'react-native';
+import {View, ImageBackground, Image, Text, TextInput} from 'react-native';
 import React from 'react';
 import {deviceHeight, deviceWidth} from '../Dimentions/Dimention';
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -35,10 +35,24 @@ export default function Home() {
             }}
           />
         </View>
-        <Text style={{fontSize: 40, color: '#fff'}}>Hello Folks!</Text>
-        <Text style={{color: '#fff', fontSize: 22, fontWeight: 'bold'}}>
-          Search The City By Name
-        </Text>
+        <View style={{paddingHorizontal: 20, marginTop: 100}}>
+          <Text style={{fontSize: 40, color: 'darkblack'}}>Hello Folks!</Text>
+          <Text style={{color: 'darkblack', fontSize: 22, fontWeight: 'bold'}}>
+            Search The City By Name
+          </Text>
+        </View>
+        <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+          <TextInput
+            placeholder="Search city"
+            style={{paddingHorizontal: 10}}></TextInput>
+
+          <Icon
+            name={'search'}
+            size={22}
+            color={'black'}
+            style={{paddingVertical: 15}}
+          />
+        </View>
       </View>
     </View>
   );
