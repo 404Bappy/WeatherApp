@@ -11,6 +11,12 @@ import {deviceHeight, deviceWidth} from '../Dimentions/Dimention';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 export default function Home() {
+  const cities = [
+    {
+      name: 'Dhaka',
+      image: require('../../Assets/dhaka.jpg'),
+    },
+  ];
   const [city, setCity] = useState(['']);
   return (
     <View>
@@ -80,7 +86,10 @@ export default function Home() {
             />
           </TouchableOpacity>
         </View>
-        <Text style={{fontSize: 22, paddingHorizontal: 10}}>My Location</Text>
+        <Text
+          style={{fontSize: 22, paddingHorizontal: 10, paddingVertical: 10}}>
+          My Locations
+        </Text>
       </View>
     </View>
   );
