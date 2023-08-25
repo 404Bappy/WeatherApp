@@ -23,7 +23,7 @@ export default function Home() {
       <ImageBackground
         source={require('../../Assets/weather.jpeg')}
         style={{height: deviceHeight, width: deviceWidth}}
-        imageStyle={{opacity: 1, backgroundColor: 'black'}}
+        imageStyle={{opacity: 2, backgroundColor: 'black'}}
       />
       <View
         style={{
